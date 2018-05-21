@@ -1,0 +1,22 @@
+{
+  "name": "LAB_U02_D07_PRACTICE_FORMS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url":
+      "git@git.generalassemb.ly:wdi-nyc-tesseract/LAB_U02_D07_PRACTICE_FORMS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4"
+  }
+}
