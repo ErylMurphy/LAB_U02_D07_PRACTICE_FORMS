@@ -48,7 +48,7 @@ app.post("/dinosaurs", (request, response) => {
   console.log(request.body);
   const index = getNextKey(dinosaurs);
   if (!request.body.name || !request.body.image_url) {
-    res
+    response
       .status(400)
       .send(
         "A dinosaur needs a name and an image_url passed in the request body."
@@ -59,7 +59,7 @@ app.post("/dinosaurs", (request, response) => {
     name: request.body.name,
     image_url: request.body.image_url
   };
-  response.status(201).send(index.toString());
+  return response.redirect(302, '/dinosaurs')
 });
 
 app.get("/dinosaurs/:id.json", (request, response) => {
